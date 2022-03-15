@@ -1,0 +1,17 @@
+Wall A
+RGB: 255, 255, 255
+
+Wall A Dark
+RGB: 0, 0, 0
+
+Wall B
+RGB: 50, 50, 50
+
+Wall B Dark
+RGB: 0, 0, 0
+
+Wall Outline A
+RGB: 100, 100, 100
+
+Wall Outline B
+RGB: 100, 100, 100

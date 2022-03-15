@@ -1,0 +1,10 @@
+SnailFlare
+RGB: 200, 255, 30
+
+Smiley 1
+RGB: 0, 255, 75
+
+Smiley 2
+RGB: 0, 255, 125
+
+

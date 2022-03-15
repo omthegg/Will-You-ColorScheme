@@ -1,0 +1,138 @@
+Background Scale Min
+50
+
+Background Scale Max
+50
+
+Background Style
+0
+
+Background Parallax Min
+0.25
+
+Background Parallax Max
+0.5
+
+BackgroundScrollSpeed
+0.5
+
+Wall Brightness When Lights Are Out
+0.5
+
+DiscoLightAlpha
+0.18
+
+----------------------------------------
+
+Background
+HSV: 100, 200, 20
+
+Background Pattern
+HSV: 100, 200, 30
+
+Background In Darkness
+HSV: 100, 200, 10
+
+Background Pattern In Darkness
+HSV: 100, 200, 15
+
+Wall A
+HSV: 100, 255, 150
+
+Wall A Dark
+HSV: 100, 200, 20
+
+Wall B
+HSV: 100, 100, 255
+
+Wall B Dark
+HSV: 120, 200, 60
+
+Wall Outline A
+HSV: 100, 180, 255
+
+Wall Outline B
+HSV: 100, 120, 255
+
+Conveyor Belts
+HSV: 120, 180, 255
+
+AI A
+HSV: 225, 200, 200
+
+AI B
+HSV: 245, 200, 200
+
+AI In Background
+RGB: 0, 200, 0
+
+Enemies
+HSV: 100, 125, 255
+
+Enemy Warnings
+HSV: 150, 150, 255
+
+Corrupted Antenna
+RGB: 120, 120, 255
+
+----------------------------------------
+
+Snail Glow
+HSV: 140, 200, 200
+
+Player Spotlight
+RGB: 0, 0, 40
+
+Player Spotlight Dark
+RGB: 0, 0, 30
+
+Snail Death
+HSV: 100, 255, 255
+
+Snail Outline
+HSV: 160, 50, 40
+
+Snail Body
+HSV: 160, 150, 255
+
+Snail Shell
+HSV: 160, 160, 230
+
+Snail Eye
+HSV: 160, 0, 255
+
+Snail Trail
+HSV: 160, 100, 255
+
+----------------------------------------
+
+Overlay Gradient Color Top
+RGB: 25, 0, 0
+
+Overlay Gradient Color Bot
+RGB: 0, 25, 0
+
+Overlay Vignette Color
+HSV: 150, 255, 100
+RGB: 50, 0, 110
+
+Overlay Vignette Alpha
+1.2
+
+Overlay Vignette Size
+0.2
+
+Post Processing Contrast
+1.7
+1.7
+1.7
+
+Post Processing Contrast Offset
+0.6
+0.6
+0.6
+
+----------------------------------------
+
+Hue Shift All Colors
+0

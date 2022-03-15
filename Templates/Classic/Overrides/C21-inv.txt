@@ -1,0 +1,35 @@
+Background Parallax Min
+1
+
+Background Parallax Max
+0
+
+Background Scale Min
+0.5
+
+Background Scale Max
+1
+
+Background Style
+16
+
+BackgroundScrollSpeed Min
+6.5
+
+BackgroundScrollSpeed Max
+6.5
+
+Wall A Dark
+RGB: 5, 0, 0
+
+Wall B Dark
+RGB: 5, 0, 0
+
+Overlay Gradient Color Top
+RGB: 30, 10, 0
+
+Overlay Gradient Color Bot
+RGB: 20, 0, 20
+
+Overlay Vignette Color
+RGB: 0, 0, 75

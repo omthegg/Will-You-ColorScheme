@@ -1,0 +1,5 @@
+BackgroundScrollSpeed Min
+4
+
+BackgroundScrollSpeed Max
+3.5

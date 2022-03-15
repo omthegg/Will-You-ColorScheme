@@ -1,0 +1,20 @@
+Snail Flare
+RGB: 25, 125, 255
+
+Snail Glow
+RGB: 125, 255, 50
+
+Smiley 1
+RGB: 125, 255, 50
+
+Smiley 2
+RGB: 125, 255, 50
+
+Snail Death
+RGB: 0, 125, 255
+
+Wall Outline A
+RGB: 200, 200, 200
+
+Wall Outline B
+RGB: 200, 200, 200

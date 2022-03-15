@@ -1,0 +1,5 @@
+Background
+HSV: 197, 200, 40
+
+Background Pattern
+HSV: 10, 0, 10

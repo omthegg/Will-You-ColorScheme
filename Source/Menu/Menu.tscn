@@ -1,0 +1,381 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Images/CheckBox/sprite_1.png" type="Texture" id=1]
+[ext_resource path="res://Source/Menu/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Images/CheckBox/sprite_0.png" type="Texture" id=3]
+[ext_resource path="res://Font/PressStart2P-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Templates/Minimalistic/Preview.png" type="Texture" id=5]
+[ext_resource path="res://Templates/Classic/Preview.png" type="Texture" id=6]
+[ext_resource path="res://Images/Logo2.png" type="Texture" id=7]
+[ext_resource path="res://Font/FFFFORWA.TTF" type="DynamicFontData" id=10]
+[ext_resource path="res://Images/logo_snail.png" type="Texture" id=11]
+[ext_resource path="res://Images/Logo1.png" type="Texture" id=12]
+
+[sub_resource type="ParticlesMaterial" id=14]
+emission_shape = 2
+emission_box_extents = Vector3( 700, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 20, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 20.0
+
+[sub_resource type="DynamicFont" id=15]
+font_data = ExtResource( 10 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 32
+font_data = ExtResource( 10 )
+
+[sub_resource type="Animation" id=17]
+resource_name = "LogoColorChange"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label2:custom_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.2, 2.5, 3.8, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ), Color( 0, 1, 1, 1 ), Color( 0, 0, 1, 1 ), Color( 1, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label2:custom_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ) ]
+}
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Font/PressStart2P-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+font_data = SubResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 32
+font_data = SubResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 10
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 8
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 10
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 8
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.0196078, 0.0431373, 0.0705882, 1 )
+border_width_left = 4
+border_color = Color( 0.0196078, 0.0431373, 0.0705882, 1 )
+
+[sub_resource type="DynamicFont" id=13]
+font_data = ExtResource( 4 )
+
+[sub_resource type="Environment" id=19]
+background_mode = 4
+glow_enabled = true
+glow_bloom = 0.2
+glow_blend_mode = 0
+adjustment_enabled = true
+adjustment_saturation = 1.2
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -640.0
+margin_top = -300.0
+margin_right = 640.0
+margin_bottom = 300.0
+color = Color( 0.0901961, 0, 0.0588235, 1 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+modulate = Color( 0.235294, 0.0784314, 0.156863, 1 )
+position = Vector2( -164, -348 )
+amount = 20
+lifetime = 4.2
+preprocess = 120.0
+speed_scale = 0.2
+process_material = SubResource( 14 )
+
+[node name="Logo" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Logo"]
+margin_left = -134.95
+margin_top = -280.0
+margin_right = -38.95
+margin_bottom = -258.0
+custom_fonts/font = SubResource( 15 )
+text = "WILL YOU"
+
+[node name="Label2" type="Label" parent="Logo"]
+visible = false
+margin_left = -162.0
+margin_top = -254.0
+margin_right = 162.0
+margin_bottom = -210.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 16 )
+text = "COLOR SCHEME"
+
+[node name="Logo1" type="Sprite" parent="Logo"]
+position = Vector2( 13.05, -222 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 12 )
+
+[node name="LogoSnail" type="Sprite" parent="Logo"]
+position = Vector2( -173.475, -232 )
+scale = Vector2( 0.322664, 0.3 )
+texture = ExtResource( 11 )
+flip_h = true
+
+[node name="LogoAnimationPlayer" type="AnimationPlayer" parent="Logo"]
+playback_speed = 0.5
+anims/LogoColorChange = SubResource( 17 )
+anims/RESET = SubResource( 18 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = -120.0
+margin_top = -56.0
+margin_right = 120.0
+margin_bottom = 96.0
+
+[node name="OpenButton" type="Button" parent="VBoxContainer"]
+margin_right = 240.0
+margin_bottom = 32.0
+custom_colors/font_color_focus = Color( 1, 0, 0.94902, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0.94902, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0.94902, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+custom_styles/focus = SubResource( 1 )
+custom_styles/normal = SubResource( 1 )
+text = "Open"
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer"]
+margin_top = 36.0
+margin_right = 240.0
+margin_bottom = 76.0
+rect_min_size = Vector2( 100, 40 )
+color = Color( 0.0901961, 0, 0.0588235, 1 )
+
+[node name="NewButton" type="Button" parent="VBoxContainer"]
+margin_top = 80.0
+margin_right = 240.0
+margin_bottom = 112.0
+custom_colors/font_color_focus = Color( 1, 0, 0.94902, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0.94902, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0.94902, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 2 )
+custom_styles/normal = SubResource( 2 )
+text = "New"
+
+[node name="FileDialog" type="FileDialog" parent="."]
+margin_left = -372.0
+margin_top = -240.0
+margin_right = 372.0
+margin_bottom = 238.0
+rect_pivot_offset = Vector2( 372, 239 )
+window_title = "Open a Directory"
+mode = 2
+access = 2
+current_dir = "/"
+current_path = "/"
+
+[node name="NewFileDialog" type="FileDialog" parent="."]
+margin_left = -372.0
+margin_top = -240.0
+margin_right = 372.0
+margin_bottom = 238.0
+rect_pivot_offset = Vector2( 372, 239 )
+window_title = "Open a Directory"
+mode = 2
+access = 2
+current_dir = "/"
+current_path = "/"
+
+[node name="ChooseTemplate" type="Control" parent="."]
+visible = false
+margin_left = -244.0
+margin_top = -148.0
+margin_right = 243.0
+margin_bottom = 148.0
+
+[node name="ColorRect" type="ColorRect" parent="ChooseTemplate"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.14902, 0.184314, 0.227451, 1 )
+
+[node name="ChooseTemplate" type="Label" parent="ChooseTemplate"]
+margin_left = 84.0
+margin_right = 404.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 10 )
+text = "Choose Template"
+align = 1
+valign = 1
+
+[node name="ChooseTemplate2" type="Label" parent="ChooseTemplate"]
+margin_left = 96.0
+margin_top = 52.0
+margin_right = 236.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 6 )
+text = "Classic"
+align = 1
+valign = 1
+
+[node name="ChooseTemplate3" type="Label" parent="ChooseTemplate"]
+margin_left = 256.0
+margin_top = 52.0
+margin_right = 396.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 6 )
+text = "Minimalist"
+align = 1
+valign = 1
+
+[node name="ClassicCheckButton" type="CheckBox" parent="ChooseTemplate"]
+margin_left = 100.0
+margin_top = 134.0
+margin_right = 140.0
+margin_bottom = 174.0
+custom_icons/checked = ExtResource( 1 )
+custom_icons/unchecked = ExtResource( 3 )
+pressed = true
+
+[node name="MinimalistCheckButton" type="CheckBox" parent="ChooseTemplate"]
+margin_left = 356.0
+margin_top = 134.0
+margin_right = 396.0
+margin_bottom = 174.0
+custom_icons/checked = ExtResource( 1 )
+custom_icons/unchecked = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="ChooseTemplate"]
+position = Vector2( 120, 78 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 6 )
+
+[node name="Sprite2" type="Sprite" parent="ChooseTemplate"]
+position = Vector2( 368, 78 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 5 )
+
+[node name="CreateButton" type="Button" parent="ChooseTemplate"]
+margin_left = 120.0
+margin_top = 260.0
+margin_right = 216.0
+margin_bottom = 280.0
+custom_colors/font_color_disabled = Color( 1, 1, 1, 0.392157 )
+custom_colors/font_color_focus = Color( 1, 0, 0.94902, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0.94902, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0.94902, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 8 )
+disabled = true
+text = "Create"
+
+[node name="CancelButton" type="Button" parent="ChooseTemplate"]
+margin_left = 272.0
+margin_top = 260.0
+margin_right = 368.0
+margin_bottom = 280.0
+custom_colors/font_color_disabled = Color( 1, 1, 1, 0.392157 )
+custom_colors/font_color_focus = Color( 1, 0, 0.94902, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0.94902, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0.94902, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/normal = SubResource( 8 )
+text = "Cancel"
+
+[node name="Name" type="LineEdit" parent="ChooseTemplate"]
+margin_left = 84.0
+margin_top = 212.0
+margin_right = 404.0
+margin_bottom = 230.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
+placeholder_text = "The number after the last color scheme"
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -224 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 7 )
+
+[node name="ColorEditor" type="Label" parent="."]
+visible = false
+margin_left = -160.0
+margin_top = -160.0
+margin_right = 160.0
+margin_bottom = -140.0
+custom_fonts/font = SubResource( 13 )
+text = "Color Editor"
+align = 1
+valign = 1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 19 )
+
+[connection signal="animation_finished" from="Logo/LogoAnimationPlayer" to="." method="_on_LogoAnimationPlayer_animation_finished"]
+[connection signal="pressed" from="VBoxContainer/OpenButton" to="." method="_on_OpenButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/NewButton" to="." method="_on_NewButton_pressed"]
+[connection signal="dir_selected" from="FileDialog" to="." method="_on_FileDialog_dir_selected"]
+[connection signal="dir_selected" from="NewFileDialog" to="." method="_on_NewFileDialog_dir_selected"]
+[connection signal="pressed" from="ChooseTemplate/ClassicCheckButton" to="." method="_on_ClassicCheckButton_pressed"]
+[connection signal="pressed" from="ChooseTemplate/MinimalistCheckButton" to="." method="_on_MinimalistCheckButton_pressed"]
+[connection signal="pressed" from="ChooseTemplate/CreateButton" to="." method="_on_CreateButton_pressed"]
+[connection signal="pressed" from="ChooseTemplate/CancelButton" to="." method="_on_CancelButton_pressed"]
+[connection signal="text_changed" from="ChooseTemplate/Name" to="." method="_on_Name_text_changed"]

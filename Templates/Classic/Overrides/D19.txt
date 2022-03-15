@@ -1,0 +1,18 @@
+
+Background Style
+1
+
+BackgroundScrollSpeed Min
+2.5
+
+BackgroundScrollSpeed Max
+4
+
+Background
+HSV: 197, 200, 40
+
+Background Pattern
+HSV: 10, 0, 10
+
+Overlay Gradient Color Top
+RGB: 50, 10, 0

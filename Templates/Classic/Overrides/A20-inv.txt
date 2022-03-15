@@ -1,0 +1,22 @@
+Background Scale Min
+1
+
+Background Scale Max
+2
+
+Background Style
+19
+
+BackgroundScrollSpeed Min
+5.5
+
+BackgroundScrollSpeed Max
+5.5
+
+Background Parallax Min
+0.1
+
+Background Parallax Max
+0.7
+
+

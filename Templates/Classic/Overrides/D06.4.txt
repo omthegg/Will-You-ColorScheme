@@ -1,0 +1,9 @@
+
+BackgroundScrollSpeed Min
+3.5
+
+BackgroundScrollSpeed Max
+5.5
+
+Enemies
+RGB: 255, 255, 0

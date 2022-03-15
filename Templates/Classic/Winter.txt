@@ -1,0 +1,99 @@
+Background
+RGB: 0, 0, 15
+
+Background Pattern
+RGB: 255, 255, 255
+
+Wall A
+RGB: 110, 110, 125
+
+Wall A Dark
+RGB: 8, 8, 10
+
+Wall B
+RGB: 206, 180, 212
+
+Wall B Dark
+RGB: 20, 18, 21
+
+Wall Outline A
+RGB: 200, 200, 236
+
+Wall Outline B
+RGB: 200, 200, 255
+
+Conveyor Belts
+RGB: 200, 200, 255
+
+AI A
+HSV: 225, 200, 200
+
+AI B
+HSV: 245, 200, 200
+
+Enemies
+RGB: 59, 102, 236
+
+Enemy Warnings
+RGB: 59, 102, 236
+
+----------------------------------------
+
+Snail Glow
+RGB: 19, 102, 236
+
+Player Spotlight
+RGB: 25, 25, 25
+
+Player Spotlight Dark
+RGB: 25, 25, 25
+
+Snail Death
+RGB: 19, 102, 236
+
+Snail Outline
+RGB: 18, 20, 66
+
+Snail Body
+RGB: 60, 92, 153
+
+Snail Shell
+RGB: 70, 108, 178
+
+Snail Eye
+RGB: 183, 184, 229
+
+Snail Trail
+HSV: 150, 200, 255
+
+----------------------------------------
+
+Overlay Gradient Color Top
+RGB: 10, 10, 0
+
+Overlay Gradient Color Bot
+RGB: 20, 0, 20
+
+Overlay Vignette Color
+RGB: 0, 0, 75
+
+Overlay Vignette Alpha
+1
+
+Overlay Vignette Size
+0.2
+
+Post Processing Contrast
+2
+2
+2
+
+Post Processing Contrast Offset
+0.4
+0.4
+0.4
+
+----------------------------------------
+
+Hue Shift All Colors
+0

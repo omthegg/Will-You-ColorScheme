@@ -1,0 +1,11 @@
+Wall Outline A
+RGB: 120, 0, 50
+
+DialogFileOverlay
+RGB: 50, 0, 0
+
+DialogFileOverlayAlpha
+0.3
+
+Overlay Gradient Color Top
+RGB: 70, 10, 0

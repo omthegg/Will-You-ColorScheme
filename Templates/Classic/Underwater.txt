@@ -1,0 +1,144 @@
+Background Scale Min
+10
+
+Background Scale Max
+2
+
+Background Style
+1
+
+Background Parallax Min
+0.25
+
+Background Parallax Max
+0.5
+
+Background Scroll Speed Min
+0
+
+Background Scroll Speed Max
+1
+
+Wall Brightness When Lights AreOut
+0.7
+
+----------------------------------------
+
+Background
+RGB: 0, 0, 25
+
+Background Pattern
+RGB: 10, 0, 37
+
+Wall A
+RGB: 19, 102, 136
+
+Wall A Dark
+RGB: 0, 0, 15
+
+Wall B
+HSV: 120, 200, 200
+
+Wall B Dark
+RGB: 0, 10, 10
+
+Wall Outline A
+RGB: 19, 102, 236
+
+Wall Outline B
+RGB: 49, 142, 255
+
+UnderwCurrents
+RGB: 49, 142, 255
+
+ConveyorBelts
+RGB: 49, 142, 255
+
+Bubbles
+RGB: 150, 255, 255
+
+AI A
+HSV: 225, 200, 200
+
+AI B
+HSV: 245, 200, 200
+
+Enemies
+HSV: 110, 160, 150
+RGB: 75, 170, 140
+
+Enemy Warnings
+HSV: 110, 160, 150
+
+DialogFileOverlay
+RGB: 0, 40, 80
+
+DialogFileOverlayAlpha
+0.3
+
+----------------------------------------
+
+Snail Glow
+RGB: 19, 102, 236
+
+Player Spotlight
+RGB: 0, 0, 20
+
+Player Spotlight Dark
+RGB: 0, 10, 20
+
+Snail Death
+HSV: 130, 200, 255
+
+Snail Outline
+HSV: 120, 50, 40
+
+Snail Body
+HSV: 140, 140, 255
+
+Snail Shell
+HSV: 150, 160, 200
+
+Snail Eye
+HSV: 120, 100, 255
+
+Snail Trail
+HSV: 150, 150, 255
+
+
+TDTurret2
+HSV: 50, 200, 200
+
+
+
+----------------------------------------
+
+Overlay Gradient Color Top
+RGB: 0, 30, 0
+
+Overlay Gradient Color Bot
+RGB: 0, 0, 25
+
+Overlay Vignette Color
+RGB: 55, 0, 0
+
+Overlay Vignette Alpha
+1
+
+Overlay Vignette Size
+0.2
+
+Post Processing Contrast
+2
+1.5
+2
+
+Post Processing Contrast Offset
+0.4
+0.7
+0.4
+
+----------------------------------------
+
+Hue Shift All Colors
+-10

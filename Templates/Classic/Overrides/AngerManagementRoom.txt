@@ -1,0 +1,8 @@
+SnailFlare
+RGB: 19, 102, 236
+
+Smiley 1
+RGB: 19, 102, 236
+
+Smiley 2
+RGB: 236, 102, 19
